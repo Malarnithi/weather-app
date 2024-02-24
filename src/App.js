@@ -54,7 +54,7 @@ function App() {
       {error && <p>{error}</p>}
       {weather && (
         <div className='detail'>
-          <img src={icon} width='80px' />
+          <img src={icon} width='80px' alt="sunny or cloudy" />
           <h2>{weather.name} - {weather.weather[0].description}</h2>
           <p className='temp'>{weather.main.temp}°C</p>
           <p><span>Humidity:</span> {weather.main.humidity}%</p>
